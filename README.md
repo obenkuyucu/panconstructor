@@ -3,9 +3,9 @@ Constructing a PAN with first 6, last 4 and half of MD5 hash
 
 This is my very first python script, so any feedback is highly appreciated. I have very limited developing knowledge and experience, so most of the credit should go to my dear friend Fatih Tuna, who helps me with all of my projects.
 
-PANConstructor constructs the PAN (Primary Account Number) with first 6, last 4 and half of the MD5 value. PCI DSS (Payment Card Industry Data Security Standard) mandates that they should not exist together in the same environment, and this script is to prove why, even with the half of the data.
+PANConstructor constructs the PAN (Primary Account Number) with first 6, last 4 and first few digits of the MD5 value. PCI DSS (Payment Card Industry Data Security Standard) mandates that they should not exist together in the same environment (Requirement 3.4.e), and this script is to prove why, even with the first digits of the hash data.
 
-It creates 1M possibilities of cards with the given digits, creates the MD5 hashes and compares with the given half hash value. It is as simple as this. Again, I’m not a developer, just an information security enthusiast with some PCI DSS knowledge.
+It creates 1M possibilities of cards with the given digits, creates the MD5 hashes and compares with the given hash string. It is as simple as this. Again, I’m not a developer, just an information security enthusiast with some PCI DSS knowledge.
 
 # Usage
 
