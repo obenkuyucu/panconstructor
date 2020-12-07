@@ -1,5 +1,5 @@
 # panconstructor
-Constructing a PAN with first 6, last 4 and half of MD5 hash
+Constructing a PAN with first 6, last 4 and few digits of MD5 hash
 
 This is my very first python script, so any feedback is highly appreciated. I have very limited developing knowledge and experience, so most of the credit should go to my dear friend Fatih Tuna, who helps me with all of my projects.
 
