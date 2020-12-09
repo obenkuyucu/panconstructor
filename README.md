@@ -16,4 +16,4 @@ It will ask for first 6, last 4 digits and any strings of MD5 hash from the begi
 # Credits
 * [Fatih Tuna](https://github.com/ftuna)
 * Virgilio Viegas
-* And the “PCI DSS compliant” third party payment gateway who has all three in their environment.
+* And the “PCI DSS compliant” third parties who store all three in their environment.
