@@ -30,30 +30,36 @@ def validate(cc_num):
 
 while True:
     try:
-        first6 = int(input("Enter first 6 digits: "))
+        first6_str = input("Enter first 6 digits: ")
+        if len(first6_str) != 6:
+            print("Sorry, must be 6 digits")
+            continue
+        first6 = int(first6_str)
     except ValueError:
         print("Sorry, only integers")
         continue
     else:
         break
-first6 = str(first6)
-print("First 6 digits: " + first6)
+print("First 6 digits: " + first6_str)
 
 while True:
     try:
-        last4 = int(input("Enter last 4 digits: "))
+        last4_str = input("Enter last 4 digits: ")
+        if len(last4_str) != 4:
+            print("Sorry, must be 4 digits")
+            continue
+        last4 = int(last4_str)
     except ValueError:
         print("Sorry, only integers")
         continue
     else:
         break
-last4 = str(last4)
-print("Last 4 digits: " + last4)
+print("Last 4 digits: " + last4_str)
 
 hash_str = input("Enter any string of MD5 hash: ")
 print("Provided MD5 hash strings: " + hash_str)
 
-initialPAN = first6 + '000000' + last4
+initialPAN = first6_str + '000000' + last4_str
 initialPAN = int(initialPAN)
 tot_pan = 0
 print("Constructed PAN(s): ")
